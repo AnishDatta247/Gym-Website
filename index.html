@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: voga;
+            src: url(/Voga-Medium-CD/Voga-Medium.otf);
+        }
+        * {
+            color: white;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(/images/background.jpg);
+            background-size: 2700px;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 15px;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            font-family: 'Playfair Display', serif;
+            display: block;
+            width: 43%;
+            margin: 37px auto;
+            /* border: 2px solid green; */
+            font-size: 22px;
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            display: inline-block;
+            right: 30px;
+            top: 15px;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            color: rgb(237, 212, 181);
+        }
+
+        .navbar li a:active {
+            color: rgb(236, 187, 123);
+        }
+
+        .left img {
+            position: absolute;
+            top: 5px;
+            filter: invert(100%);
+            width: 100px;
+            display: inline-block;
+        }
+
+        .name {
+            font-family: voga;
+            margin-left: 115px;
+            padding: 4px 0px;
+            font-size: 60px;
+        }
+
+        .btn {
+            font-family: 'Nanum Myeongjo', serif;
+            display: block;
+            font-size: 17px;
+            margin: 12px auto;
+            color: white;
+            background-color: #121315;
+            border: 2px solid #28292c;
+            padding: 4px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: rgb(237, 212, 181);
+            background-color: #27292a;
+        }
+        .container{
+            /* border: 2px solid green; */
+            margin: 2px 2px;
+            width: 33%;
+            padding: 50px 2px;
+        }
+        .joinnow{
+            text-align: center;
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 22px;
+            padding: 20px 0px;
+            margin-top: 50px;
+        }
+        .formgroup input, .formgroup select, .formgroup textarea{
+            color: #76787c;
+            text-align: center;
+            font-family: 'Nanum Myeongjo', serif;
+            /* this is how you centre align a non text item */
+            display: block;
+            width: 300px;
+            height: 27px;
+            font-size: 18px;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        option{
+            color: #76787c;
+        }
+        .subbtn{
+            display: block;
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 17px;
+            margin: 12px auto;
+            color: white;
+            background-color: #121315;
+            border: 2px solid #28292c;
+            padding: 4px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .subbtn:hover {
+            color: rgb(237, 212, 181);
+            background-color: #27292a;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/images/logo.png" alt="">
+            <div class="name">Bolt Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="https://google.com" target="_blank">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="joinnow">Join the BEST GYM of Kolkata now</div>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="name" id="myName" placeholder="Enter your Name">
+                <input type="number" name="age" id="myAge" placeholder="Enter your age">
+                <select name="gender" id="myGender" >
+                    <option value="default" selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea name="address" id="myAddress" cols="30" rows="1">Enter your locality</textarea>
+                <input type="email" name="email" id="myEmail" placeholder="Enter your Email-id">
+                <input type="number" name="phnum" id="myPhoneNum" placeholder="Enter Phone Number">
+            </div>
+            <button class="subbtn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
